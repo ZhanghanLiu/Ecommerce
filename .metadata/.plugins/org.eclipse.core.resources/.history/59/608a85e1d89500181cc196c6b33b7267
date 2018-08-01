@@ -1,0 +1,29 @@
+package com.bookstore.security;
+
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="user_name")
+public class UserRole implements Serializable{
+	private static final long serialVersionUID = 890345L;
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private long userRoleId;
+	
+	public UserRole() {}
+	
+	public userRole(User user, Role role) {
+		this.user = user;
+		this.role = role;
+	}
+	
+	private User user;
+	
+	private Role role;
+}

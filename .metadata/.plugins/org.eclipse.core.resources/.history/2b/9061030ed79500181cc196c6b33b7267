@@ -1,0 +1,7 @@
+package com.bookstore.security;
+
+@Entity
+@Table(name="user_name")
+public class UserRole {
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;bookstore-angular/src/main/java/com/bookstore/security/role.java&apos; to &apos;Role.java&apos;" description="Rename resource &apos;role.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/com/bookstore/security/role.java" name="Role.java" stamp="1533160634665" updateReferences="true"/>
+</session>
