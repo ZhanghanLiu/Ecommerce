@@ -1,0 +1,29 @@
+package com.bookstore.Service.impl;
+
+import java.util.Set;
+
+import javax.transaction.Transactional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.bookstore.Repository.UserRepository;
+import com.bookstore.Service.UserService;
+import com.bookstore.security.User;
+import com.bookstore.security.UserRole;
+
+@Service
+public class UserServiceImpl implements UserService{
+	
+	@Autowired
+	private UserRepository userRepository;
+	
+	@Transactional
+	public User createUser(User user, Set<UserRole> userRoles) {
+		User localUser = userRepository.findByUsername(user.getUsername());
+		
+		if(localUser != null) {
+			LOG.info("User with username {} already exist. Nothing will be done", user.getUsername());
+		}
+	}
+}
