@@ -19,6 +19,11 @@
 <fullyQualifiedTypeName name="com.bookstore.repository.RoleRepository"/>
 <fullyQualifiedTypeName name="com.bookstore.security.Role"/>
 <fullyQualifiedTypeName name="org.springframework.core.Ordered"/>
-<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
 <fullyQualifiedTypeName name="javax.servlet.FilterConfig"/>
+<fullyQualifiedTypeName name="com.fasterxml.classmate.Filter"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="javax.servlet.Filter"/>
+<fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
 </qualifiedTypeNameHistroy>
